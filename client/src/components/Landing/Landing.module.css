@@ -1,12 +1,13 @@
 .heroLanding{
     background-image: url(../../images/horizontal_poke.png);
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .button{
     position: absolute;
     top: 465px;
-    left: 872px;
+    left: 871px;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: transparent;
@@ -45,4 +46,4 @@
         font-weight: bold;
         cursor: pointer;
     }
-  }
+}

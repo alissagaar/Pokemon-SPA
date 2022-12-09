@@ -17,7 +17,7 @@ export default function SearchBar() {
     return(
         <div>
             <input className={s.input} type="text" autoComplete="off" value={input} onChange={handleChange} placeholder='Try with Pikachu' />
-            <button className={s.search} onClick={handleSearch}>Search</button>
+            { input.length ? <button className={s.search} onClick={handleSearch}>Search</button> : <button className={s.search} disabled>Search</button>}
         </div>
     )
 }

@@ -1,8 +1,10 @@
 export default function validate(input) {
     const errors = {}
+
     //Name input
     if(!input.name) errors.name = 'Pokemon name is required';
     if(input.name.length < 2) errors.name = 'Insufficient characters';
+    else if(!/^[A-Za-z0-9 ]+$/.test(input.name)) errors.name = 'No special characters';
     //Image input
     if(!input.image) errors.image = 'Pokemon image is required';
     //Types input
